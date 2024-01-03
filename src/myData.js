@@ -6,6 +6,7 @@ export const myObject = [
     rating: 9,
     release: "2023-12-13",
     description: "Having failed to defeat Aquaman the first time, ",
+    link: "https://www.youtube.com/watch?v=FV3bqvOHRQo",
   },
   {
     id: 1,
@@ -16,6 +17,7 @@ export const myObject = [
     release: "2023-01-27",
     description:
       "Jack Reacher was arrested for murder and now the police need his help. Based on the books by Lee Child",
+    link: "https://www.youtube.com/watch?v=tC-rRhQcnlI",
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ export const myObject = [
     release: "2023-7-15",
     description:
       "The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.",
+    link: "https://www.youtube.com/watch?v=bK6ldnjE3Y0",
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ export const myObject = [
     release: "2023-12-21",
     description:
       "Post war Japan is at its lowest point when a new crisis emerges in the form of a giant monster, baptized in the horrific power of the atomic bomb.",
+      link:"https://www.youtube.com/watch?v=JwYsZXR24C4"
   },
   {
     id: 4,
@@ -45,16 +49,19 @@ export const myObject = [
     release: "2023-10-01",
     description:
       "Having pulled off an escape from Tweedy's farm, Ginger has found a peaceful island sanctuary for the whole flock.",
+    link: "https://www.youtube.com/watch?v=_-Kz67kea8Q",
   },
   {
     id: 5,
     imgURL:
       "https://m.media-amazon.com/images/M/MV5BZGFjODE5ZTgtOWYyMy00MWRmLWFmZmQtOTVmMmRhYTA0MGQyXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg",
+
     title: "Finestkind",
     rating: 8.0,
     release: "2023-12-25",
     description:
       "A crew of fishermen tread dangerous waters when their debts start piling up.",
+    link: "https://www.youtube.com/watch?v=O8aPzwMl37g",
   },
   {
     id: 6,
@@ -65,5 +72,6 @@ export const myObject = [
     release: "2013-10-18",
     description:
       "After it's discovered that a teacher at South Park Elementary has an OnlyFans page, Randy is compelled to take a closer look at the seedy underbelly of the world of online influencers.",
+    link: "https://www.youtube.com/watch?v=6kJ2uPe_mWM",
   },
 ];

@@ -6,12 +6,15 @@ import SearchBar from "./components/SearchBar";
 import { myObject } from "./myData";
 import NewMovieForm from "./components/NewMovieForm";
 import AppFooter from "./components/AppFooter";
+import { Routes, Route } from "react-router-dom";
+import MovieLink from "./components/MovieLink";
 
 function App() {
-  // State variables to manage user input and component visibility
   const [searchedTitle, setSearchedTitle] = useState("");
   const [searchedRating, setSearchedRating] = useState(0);
   const [show, setShow] = useState(false);
+
+  // State variables to manage user input and component visibility
 
   // State variable to manage movie data
   const [myData, setMyData] = useState(myObject);
@@ -71,20 +74,30 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar toggleShow={toggleShow} />
-      <SearchBar handleFilter={handlefilter} />
-      <MovieList filteredMovies={filteredData} />
-      {show && (
-        <NewMovieForm
-          toggleShow={toggleShow}
-          additionHandler={additionHandler}
-          newData={newData}
-          setNewData={setNewData}
-        />
-      )}
       <button id="scroll-to-top" onClick={scrollToTop}>
         Top
       </button>
+      <Navbar toggleShow={toggleShow} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <SearchBar handleFilter={handlefilter} />
+              <MovieList filteredMovies={filteredData} />
+              {show && (
+                <NewMovieForm
+                  toggleShow={toggleShow}
+                  additionHandler={additionHandler}
+                  newData={newData}
+                  setNewData={setNewData}
+                />
+              )}
+            </>
+          }
+        />
+        <Route path="/movie/:id" element={<MovieLink myData={myData} />} />
+      </Routes>
       <AppFooter />
     </div>
   );
